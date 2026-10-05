@@ -1,0 +1,7 @@
+{
+  "faithfulness": 1.0,
+  "number_fidelity": 1.0,
+  "support_recall": 1.0,
+  "gap_recall": 1.0,
+  "injection_refusal": 1.0
+}

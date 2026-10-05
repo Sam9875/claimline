@@ -1,0 +1,357 @@
+{
+  "candidate": "Samesun Singh",
+  "github": "https://github.com/Sam9875",
+  "job_title": "Applied AI Engineer",
+  "checks": {
+    "faithfulness": 1.0,
+    "number_fidelity": 1.0
+  },
+  "tool_calls": 28,
+  "budget": 64,
+  "blocked": [],
+  "unmapped": [
+    "Hands-on LLM application work"
+  ],
+  "covered": [
+    {
+      "requirement_id": "req-01",
+      "skill": "rag",
+      "skill_label": "retrieval-augmented generation",
+      "kind": "skill",
+      "status": "supported",
+      "statement": "Qdrant hybrid search lab [qdrant-semantic-search] is evidence for retrieval-augmented generation. Public lab of Qdrant semantic search and hybrid search over news and supplier records.",
+      "card_id": "qdrant-semantic-search",
+      "card_title": "Qdrant hybrid search lab",
+      "url": "https://github.com/Sam9875/qdrant-semantic-search",
+      "limits": [
+        "a managed Qdrant cluster in production",
+        "a measured retrieval score, unless you add that figure"
+      ]
+    },
+    {
+      "requirement_id": "req-02",
+      "skill": "agents",
+      "skill_label": "agent orchestration",
+      "kind": "skill",
+      "status": "supported",
+      "statement": "Coding agent loop lab [openhands-coding-agent] is evidence for agent orchestration. Public lab of an OpenHands-style coding agent loop: plan, patch, run tests, and stop on an oracle.",
+      "card_id": "openhands-coding-agent",
+      "card_title": "Coding agent loop lab",
+      "url": "https://github.com/Sam9875/openhands-coding-agent",
+      "limits": [
+        "an autonomous coder used on a production codebase",
+        "a pass rate, unless you add that figure"
+      ]
+    },
+    {
+      "requirement_id": "req-03",
+      "skill": "evals",
+      "skill_label": "evaluation",
+      "kind": "skill",
+      "status": "supported",
+      "statement": "PRISM Observatory [prism-observatory] is evidence for evaluation. Local retrieval-augmented generation workbench with three lenses. Glass is one hybrid retrieval over a lexical index and a dense index, fused by reciprocal rank fusion. Aurora is a LangGraph state machine that guards the question, routes, plans, retrieves, grades, rewrites, synthesizes, verifies, and guards the answer. Input checks reject an empty question, a question longer than 400 characters, an instruction override, and personal data such as an email, a phone number, or a card number. A cited sentence is kept only when that sentence appears in the passage it cites. The bench runs eight questions and reports support, precision, and latency. A static dashboard in the repository runs the same checks in the browser. Recorded figures: lenses=3; bench_questions=8; max_question_characters=400.",
+      "card_id": "prism-observatory",
+      "card_title": "PRISM Observatory",
+      "url": "https://github.com/Sam9875/prism-observatory",
+      "limits": [
+        "a hosted chat model",
+        "production user traffic",
+        "fine-tuning"
+      ]
+    },
+    {
+      "requirement_id": "req-04",
+      "skill": "guardrails",
+      "skill_label": "guardrails",
+      "kind": "skill",
+      "status": "supported",
+      "statement": "Chatbot injection hackathon [chatbot-injection-hackathon] is evidence for guardrails. Hackathon repository on prompt injection and multi-agent behavior for AI chatbots.",
+      "card_id": "chatbot-injection-hackathon",
+      "card_title": "Chatbot injection hackathon",
+      "url": "https://github.com/Sam9875/hackathon-Cyber-security-",
+      "limits": [
+        "a professional security audit",
+        "a paid bounty or a production incident review"
+      ]
+    },
+    {
+      "requirement_id": "req-05",
+      "skill": "mcp",
+      "skill_label": "Model Context Protocol",
+      "kind": "skill",
+      "status": "supported",
+      "statement": "MCP server lab [mcp-server-lab] is evidence for Model Context Protocol. Public Model Context Protocol server. The tools cover news search, listing fit, and breakdown-risk lookup.",
+      "card_id": "mcp-server-lab",
+      "card_title": "MCP server lab",
+      "url": "https://github.com/Sam9875/mcp-server-lab",
+      "limits": [
+        "a remote hosted MCP deployment",
+        "authentication or multi-tenant access control"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "requirement_id": "req-06",
+      "skill": "docker",
+      "skill_label": "Docker",
+      "kind": "skill",
+      "status": "gap",
+      "statement": "No evidence card lists Docker. This requirement stays a gap.",
+      "card_id": null,
+      "card_title": "",
+      "url": "",
+      "limits": []
+    },
+    {
+      "requirement_id": "req-07",
+      "skill": "kubernetes",
+      "skill_label": "Kubernetes",
+      "kind": "skill",
+      "status": "gap",
+      "statement": "No evidence card lists Kubernetes. This requirement stays a gap.",
+      "card_id": null,
+      "card_title": "",
+      "url": "",
+      "limits": []
+    },
+    {
+      "requirement_id": "req-08",
+      "skill": "production_ops",
+      "skill_label": "production ownership",
+      "kind": "skill",
+      "status": "gap",
+      "statement": "No evidence card lists production ownership. This requirement stays a gap.",
+      "card_id": null,
+      "card_title": "",
+      "url": "",
+      "limits": []
+    },
+    {
+      "requirement_id": "req-09",
+      "skill": "python",
+      "skill_label": "Python",
+      "kind": "experience_years",
+      "status": "gap",
+      "statement": "13 evidence cards list Python, including Qdrant hybrid search lab [qdrant-semantic-search]. No evidence card records 3 years, so that duration is not claimed.",
+      "card_id": "qdrant-semantic-search",
+      "card_title": "Qdrant hybrid search lab",
+      "url": "https://github.com/Sam9875/qdrant-semantic-search",
+      "limits": []
+    },
+    {
+      "requirement_id": "req-10",
+      "skill": "sql",
+      "skill_label": "SQL",
+      "kind": "skill",
+      "status": "gap",
+      "statement": "No evidence card lists SQL. This requirement stays a gap.",
+      "card_id": null,
+      "card_title": "",
+      "url": "",
+      "limits": []
+    },
+    {
+      "requirement_id": "req-11",
+      "skill": "typescript",
+      "skill_label": "TypeScript",
+      "kind": "skill",
+      "status": "gap",
+      "statement": "No evidence card lists TypeScript. This requirement stays a gap.",
+      "card_id": null,
+      "card_title": "",
+      "url": "",
+      "limits": []
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "tool": "screen_job",
+      "detail": "blocked=0",
+      "counted": false
+    },
+    {
+      "step": 2,
+      "tool": "parse_requirements",
+      "detail": "requirements=11 unmapped=1",
+      "counted": false
+    },
+    {
+      "step": 3,
+      "tool": "search_evidence",
+      "detail": "req-01 skill=rag top=qdrant-semantic-search hits=3",
+      "counted": true
+    },
+    {
+      "step": 4,
+      "tool": "read_card",
+      "detail": "req-01 card=qdrant-semantic-search",
+      "counted": true
+    },
+    {
+      "step": 5,
+      "tool": "commit_claim",
+      "detail": "req-01 card=qdrant-semantic-search",
+      "counted": true
+    },
+    {
+      "step": 6,
+      "tool": "search_evidence",
+      "detail": "req-02 skill=agents top=openhands-coding-agent hits=3",
+      "counted": true
+    },
+    {
+      "step": 7,
+      "tool": "read_card",
+      "detail": "req-02 card=openhands-coding-agent",
+      "counted": true
+    },
+    {
+      "step": 8,
+      "tool": "commit_claim",
+      "detail": "req-02 card=openhands-coding-agent",
+      "counted": true
+    },
+    {
+      "step": 9,
+      "tool": "search_evidence",
+      "detail": "req-03 skill=evals top=prism-observatory hits=3",
+      "counted": true
+    },
+    {
+      "step": 10,
+      "tool": "read_card",
+      "detail": "req-03 card=prism-observatory",
+      "counted": true
+    },
+    {
+      "step": 11,
+      "tool": "commit_claim",
+      "detail": "req-03 card=prism-observatory",
+      "counted": true
+    },
+    {
+      "step": 12,
+      "tool": "search_evidence",
+      "detail": "req-04 skill=guardrails top=chatbot-injection-hackathon hits=2",
+      "counted": true
+    },
+    {
+      "step": 13,
+      "tool": "read_card",
+      "detail": "req-04 card=chatbot-injection-hackathon",
+      "counted": true
+    },
+    {
+      "step": 14,
+      "tool": "commit_claim",
+      "detail": "req-04 card=chatbot-injection-hackathon",
+      "counted": true
+    },
+    {
+      "step": 15,
+      "tool": "search_evidence",
+      "detail": "req-05 skill=mcp top=mcp-server-lab hits=1",
+      "counted": true
+    },
+    {
+      "step": 16,
+      "tool": "read_card",
+      "detail": "req-05 card=mcp-server-lab",
+      "counted": true
+    },
+    {
+      "step": 17,
+      "tool": "commit_claim",
+      "detail": "req-05 card=mcp-server-lab",
+      "counted": true
+    },
+    {
+      "step": 18,
+      "tool": "search_evidence",
+      "detail": "req-06 skill=docker top=none hits=0",
+      "counted": true
+    },
+    {
+      "step": 19,
+      "tool": "commit_claim",
+      "detail": "req-06 card=none",
+      "counted": true
+    },
+    {
+      "step": 20,
+      "tool": "search_evidence",
+      "detail": "req-07 skill=kubernetes top=none hits=0",
+      "counted": true
+    },
+    {
+      "step": 21,
+      "tool": "commit_claim",
+      "detail": "req-07 card=none",
+      "counted": true
+    },
+    {
+      "step": 22,
+      "tool": "search_evidence",
+      "detail": "req-08 skill=production_ops top=none hits=0",
+      "counted": true
+    },
+    {
+      "step": 23,
+      "tool": "commit_claim",
+      "detail": "req-08 card=none",
+      "counted": true
+    },
+    {
+      "step": 24,
+      "tool": "search_evidence",
+      "detail": "req-09 skill=python top=qdrant-semantic-search hits=3",
+      "counted": true
+    },
+    {
+      "step": 25,
+      "tool": "read_card",
+      "detail": "req-09 card=qdrant-semantic-search",
+      "counted": true
+    },
+    {
+      "step": 26,
+      "tool": "commit_claim",
+      "detail": "req-09 card=qdrant-semantic-search",
+      "counted": true
+    },
+    {
+      "step": 27,
+      "tool": "search_evidence",
+      "detail": "req-10 skill=sql top=none hits=0",
+      "counted": true
+    },
+    {
+      "step": 28,
+      "tool": "commit_claim",
+      "detail": "req-10 card=none",
+      "counted": true
+    },
+    {
+      "step": 29,
+      "tool": "search_evidence",
+      "detail": "req-11 skill=typescript top=none hits=0",
+      "counted": true
+    },
+    {
+      "step": 30,
+      "tool": "commit_claim",
+      "detail": "req-11 card=none",
+      "counted": true
+    },
+    {
+      "step": 31,
+      "tool": "verify_claims",
+      "detail": "faithfulness=1.00 number_fidelity=1.00",
+      "counted": false
+    }
+  ],
+  "prose_accepted": false,
+  "brief_markdown": "# Applied AI Engineer\n\nCandidate: Samesun Singh\n\nThis brief cites the evidence locker only. A gap is something to learn or to leave off an application. It is not a missing sentence to invent.\n\nVerifier: faithfulness 1.00, number fidelity 1.00. Evidence lookups 28 of 64.\n\n## Covered\n\n### Qdrant hybrid search lab\n\nCovers: retrieval-augmented generation.\n\nLink: https://github.com/Sam9875/qdrant-semantic-search\n\n- `req-01` Qdrant hybrid search lab [qdrant-semantic-search] is evidence for retrieval-augmented generation. Public lab of Qdrant semantic search and hybrid search over news and supplier records.\n\nThis card does not prove:\n- a managed Qdrant cluster in production\n- a measured retrieval score, unless you add that figure\n\n### Coding agent loop lab\n\nCovers: agent orchestration.\n\nLink: https://github.com/Sam9875/openhands-coding-agent\n\n- `req-02` Coding agent loop lab [openhands-coding-agent] is evidence for agent orchestration. Public lab of an OpenHands-style coding agent loop: plan, patch, run tests, and stop on an oracle.\n\nThis card does not prove:\n- an autonomous coder used on a production codebase\n- a pass rate, unless you add that figure\n\n### PRISM Observatory\n\nCovers: evaluation.\n\nLink: https://github.com/Sam9875/prism-observatory\n\n- `req-03` PRISM Observatory [prism-observatory] is evidence for evaluation. Local retrieval-augmented generation workbench with three lenses. Glass is one hybrid retrieval over a lexical index and a dense index, fused by reciprocal rank fusion. Aurora is a LangGraph state machine that guards the question, routes, plans, retrieves, grades, rewrites, synthesizes, verifies, and guards the answer. Input checks reject an empty question, a question longer than 400 characters, an instruction override, and personal data such as an email, a phone number, or a card number. A cited sentence is kept only when that sentence appears in the passage it cites. The bench runs eight questions and reports support, precision, and latency. A static dashboard in the repository runs the same checks in the browser. Recorded figures: lenses=3; bench_questions=8; max_question_characters=400.\n\nThis card does not prove:\n- a hosted chat model\n- production user traffic\n- fine-tuning\n\n### Chatbot injection hackathon\n\nCovers: guardrails.\n\nLink: https://github.com/Sam9875/hackathon-Cyber-security-\n\n- `req-04` Chatbot injection hackathon [chatbot-injection-hackathon] is evidence for guardrails. Hackathon repository on prompt injection and multi-agent behavior for AI chatbots.\n\nThis card does not prove:\n- a professional security audit\n- a paid bounty or a production incident review\n\n### MCP server lab\n\nCovers: Model Context Protocol.\n\nLink: https://github.com/Sam9875/mcp-server-lab\n\n- `req-05` MCP server lab [mcp-server-lab] is evidence for Model Context Protocol. Public Model Context Protocol server. The tools cover news search, listing fit, and breakdown-risk lookup.\n\nThis card does not prove:\n- a remote hosted MCP deployment\n- authentication or multi-tenant access control\n\n## Not claimed\n\n### Docker\n\nNo evidence card lists Docker. This requirement stays a gap.\n\n### Kubernetes\n\nNo evidence card lists Kubernetes. This requirement stays a gap.\n\n### Production ownership\n\nNo evidence card lists production ownership. This requirement stays a gap.\n\n### 3 years of Python\n\n13 evidence cards list Python, including Qdrant hybrid search lab [qdrant-semantic-search]. No evidence card records 3 years, so that duration is not claimed.\n\n### SQL\n\nNo evidence card lists SQL. This requirement stays a gap.\n\n### TypeScript\n\nNo evidence card lists TypeScript. This requirement stays a gap.\n\n## Lines that were not mapped to a skill\n\nRead these yourself. The matcher does not guess beyond its lexicon.\n\n- Hands-on LLM application work\n\n## What the loop did\n\n1. `screen_job` (safety) - blocked=0\n2. `parse_requirements` (safety) - requirements=11 unmapped=1\n3. `search_evidence` (counted) - req-01 skill=rag top=qdrant-semantic-search hits=3\n4. `read_card` (counted) - req-01 card=qdrant-semantic-search\n5. `commit_claim` (counted) - req-01 card=qdrant-semantic-search\n6. `search_evidence` (counted) - req-02 skill=agents top=openhands-coding-agent hits=3\n7. `read_card` (counted) - req-02 card=openhands-coding-agent\n8. `commit_claim` (counted) - req-02 card=openhands-coding-agent\n9. `search_evidence` (counted) - req-03 skill=evals top=prism-observatory hits=3\n10. `read_card` (counted) - req-03 card=prism-observatory\n11. `commit_claim` (counted) - req-03 card=prism-observatory\n12. `search_evidence` (counted) - req-04 skill=guardrails top=chatbot-injection-hackathon hits=2\n13. `read_card` (counted) - req-04 card=chatbot-injection-hackathon\n14. `commit_claim` (counted) - req-04 card=chatbot-injection-hackathon\n15. `search_evidence` (counted) - req-05 skill=mcp top=mcp-server-lab hits=1\n16. `read_card` (counted) - req-05 card=mcp-server-lab\n17. `commit_claim` (counted) - req-05 card=mcp-server-lab\n18. `search_evidence` (counted) - req-06 skill=docker top=none hits=0\n19. `commit_claim` (counted) - req-06 card=none\n20. `search_evidence` (counted) - req-07 skill=kubernetes top=none hits=0\n21. `commit_claim` (counted) - req-07 card=none\n22. `search_evidence` (counted) - req-08 skill=production_ops top=none hits=0\n23. `commit_claim` (counted) - req-08 card=none\n24. `search_evidence` (counted) - req-09 skill=python top=qdrant-semantic-search hits=3\n25. `read_card` (counted) - req-09 card=qdrant-semantic-search\n26. `commit_claim` (counted) - req-09 card=qdrant-semantic-search\n27. `search_evidence` (counted) - req-10 skill=sql top=none hits=0\n28. `commit_claim` (counted) - req-10 card=none\n29. `search_evidence` (counted) - req-11 skill=typescript top=none hits=0\n30. `commit_claim` (counted) - req-11 card=none\n31. `verify_claims` (safety) - faithfulness=1.00 number_fidelity=1.00\n"
+}

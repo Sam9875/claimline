@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  --bg: #f3efe4;
+  --ink: #1c1915;
+  --muted: #5c564c;
+  --card: #fffdf8;
+  --line: #e3d9c4;
+  --covered: #1f6b4a;
+  --gap: #9a3412;
+  --accent: #0f4c5c;
+  --shadow: 0 1px 0 rgba(28, 25, 21, 0.04);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 "Segoe UI", system-ui, sans-serif;
+}
+
+header, main { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+
+header { padding: 32px 0 8px; }
+
+h1, h2, h3 { font-family: Georgia, "Iowan Old Style", Palatino, serif; font-weight: 600; }
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+
+h2 { font-size: 1.25rem; margin: 0 0 12px; }
+
+.lede { max-width: 62ch; color: var(--muted); margin: 0 0 16px; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0 8px; }
+
+button, .file {
+  background: var(--accent);
+  color: white;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+}
+
+.file { cursor: pointer; }
+
+input[type="file"] { display: none; }
+
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0 24px; }
+
+.stat, article, .trace, .notice {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.stat { padding: 14px 16px; }
+
+.stat b { display: block; font-family: Georgia, Palatino, serif; font-size: 1.6rem; }
+
+.stat span, .meta { color: var(--muted); }
+
+.layout { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 16px; }
+
+article, .notice, .trace { padding: 16px; margin-bottom: 16px; }
+
+.covered { border-top: 4px solid var(--covered); }
+
+.gap { border-top: 4px solid var(--gap); }
+
+a { color: var(--accent); }
+
+ul { margin: 8px 0 0; padding-left: 18px; }
+
+li { margin: 6px 0; }
+
+.trace ol { margin: 0; padding-left: 20px; }
+
+.tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: #efe7d6;
+  font-size: 0.85rem;
+}
+
+footer { width: min(1080px, calc(100% - 32px)); margin: 8px auto 32px; color: var(--muted); }
+
+@media (max-width: 800px) {
+  .stats, .layout { grid-template-columns: 1fr; }
+  h1 { font-size: 1.6rem; }
+}

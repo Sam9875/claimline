@@ -1,0 +1,177 @@
+# Public repositories only. This is not a resume.
+# Add a card after you can show the artifact. Do not add a skill you cannot defend.
+candidate: Samesun Singh
+github: https://github.com/Sam9875
+note: |
+  EDITOR NOTE not evidence. These cards describe public repositories only.
+  Edit them before you use a brief in an application.
+  Do not add a skill you cannot defend from an artifact.
+evidence:
+  - id: prism-observatory
+    title: PRISM Observatory
+    url: https://github.com/Sam9875/prism-observatory
+    skills: [rag, agents, evals, guardrails, python]
+    summary: |
+      Local retrieval-augmented generation workbench with three lenses.
+      Glass is one hybrid retrieval over a lexical index and a dense index,
+      fused by reciprocal rank fusion. Aurora is a LangGraph state machine
+      that guards the question, routes, plans, retrieves, grades, rewrites,
+      synthesizes, verifies, and guards the answer. Input checks reject an
+      empty question, a question longer than 400 characters, an instruction
+      override, and personal data such as an email, a phone number, or a card
+      number. A cited sentence is kept only when that sentence appears in the
+      passage it cites. The bench runs eight questions and reports support,
+      precision, and latency. A static dashboard in the repository runs the
+      same checks in the browser.
+    metrics:
+      lenses: "3"
+      bench_questions: "8"
+      max_question_characters: "400"
+    does_not_prove:
+      - a hosted chat model
+      - production user traffic
+      - fine-tuning
+
+  - id: tenant-bias-llm
+    title: Tenant-bias screening audit
+    url: https://github.com/Sam9875/Tenant-bias-LLM
+    skills: [fairness, evals, python]
+    summary: |
+      Public audit harness for language models used as rental screening
+      assistants, set in Turin. The repository describes five real-style
+      apartment listings and 480 synthetic applicant profiles, built as 24
+      demographic or income combinations with 20 profiles each. The repository
+      names Owl-alpha and Qwen as the models under test.
+    metrics:
+      listings: "5"
+      synthetic_profiles: "480"
+      demographic_combinations: "24"
+      profiles_per_combination: "20"
+    does_not_prove:
+      - a measured fairness result, unless you add that figure yourself
+      - a production screening system
+
+  - id: promptfoo-evals-lab
+    title: Promptfoo-style eval lab
+    url: https://github.com/Sam9875/promptfoo-evals-lab
+    skills: [evals, fairness, python]
+    summary: |
+      Public lab in the style of Promptfoo. It runs evaluation cases with
+      fairness assertions taken from a tenant-screening audit.
+    does_not_prove:
+      - a production evaluation platform
+      - a fairness result beyond the assertions stored in the repo
+
+  - id: mcp-server-lab
+    title: MCP server lab
+    url: https://github.com/Sam9875/mcp-server-lab
+    skills: [mcp, python]
+    summary: |
+      Public Model Context Protocol server. The tools cover news search,
+      listing fit, and breakdown-risk lookup.
+    does_not_prove:
+      - a remote hosted MCP deployment
+      - authentication or multi-tenant access control
+
+  - id: langgraph-agent-lab
+    title: LangGraph news agent lab
+    url: https://github.com/Sam9875/langgraph-agent-lab
+    skills: [agents, rag, python]
+    summary: |
+      Public lab of a stateful LangGraph-style agent for news research, with
+      a planner, retrieval, a policy check, and a draft step.
+    does_not_prove:
+      - a production agent with real users
+      - human review outside the lab
+
+  - id: rag-from-scratch-lab
+    title: RAG from scratch lab
+    url: https://github.com/Sam9875/rag-from-scratch-lab
+    skills: [rag, python]
+    summary: |
+      Public lab that builds retrieval-augmented generation from first
+      principles: chunk, embed, retrieve, and generate. The target queries
+      are sparse news queries.
+    does_not_prove:
+      - a production search service
+      - a measured gain over a baseline, unless you add that figure
+
+  - id: qdrant-semantic-search
+    title: Qdrant hybrid search lab
+    url: https://github.com/Sam9875/qdrant-semantic-search
+    skills: [vector_db, rag, python]
+    summary: |
+      Public lab of Qdrant semantic search and hybrid search over news and
+      supplier records.
+    does_not_prove:
+      - a managed Qdrant cluster in production
+      - a measured retrieval score, unless you add that figure
+
+  - id: unsloth-lora-lab
+    title: Unsloth LoRA recipe lab
+    url: https://github.com/Sam9875/unsloth-lora-lab
+    skills: [fine_tuning, python]
+    summary: |
+      Public lab describing an Unsloth-style LoRA fine-tune recipe for news
+      title and abstract models, aimed at a single GPU.
+    does_not_prove:
+      - a completed training run with a held-out metric, unless you add that figure
+      - a deployed fine-tuned model
+
+  - id: made-with-ml-ops
+    title: Made-With-ML ops lab
+    url: https://github.com/Sam9875/made-with-ml-ops
+    skills: [llmops, python]
+    summary: |
+      Public lab following a Made-With-ML style path from a notebook to a
+      trained, evaluated, and registered model.
+    does_not_prove:
+      - live traffic
+      - a Kubernetes deployment
+      - an on-call rotation
+
+  - id: openhands-coding-agent
+    title: Coding agent loop lab
+    url: https://github.com/Sam9875/openhands-coding-agent
+    skills: [agents, python]
+    summary: |
+      Public lab of an OpenHands-style coding agent loop: plan, patch, run
+      tests, and stop on an oracle.
+    does_not_prove:
+      - an autonomous coder used on a production codebase
+      - a pass rate, unless you add that figure
+
+  - id: gemini-multimodal-lab
+    title: Multimodal QA lab
+    url: https://github.com/Sam9875/gemini-multimodal-lab
+    skills: [multimodal, python]
+    summary: |
+      Public lab of a Gemini-style multimodal app over text, image, and short
+      video, with Ego4D-flavoured question answering.
+    does_not_prove:
+      - a measured video QA score, unless you add that figure
+      - a production multimodal API integration
+
+  - id: mind-two-tower
+    title: MIND two-tower labs
+    url: https://github.com/Sam9875/microsoft-recommenders-lab
+    skills: [recommender, python]
+    summary: |
+      Public labs applying Microsoft Recommenders patterns to MIND-style news,
+      including a two-tower model and cold-start slices. Related public
+      repositories are MIND-large-column and Two-Tower-thesis.
+    does_not_prove:
+      - a thesis defense outcome
+      - production recommendation traffic
+      - an offline metric, unless you add that figure
+
+  - id: chatbot-injection-hackathon
+    title: Chatbot injection hackathon
+    url: https://github.com/Sam9875/hackathon-Cyber-security-
+    skills: [guardrails, agents, python]
+    summary: |
+      Hackathon repository on prompt injection and multi-agent behavior for
+      AI chatbots.
+    does_not_prove:
+      - a professional security audit
+      - a paid bounty or a production incident review
