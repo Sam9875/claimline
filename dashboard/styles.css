@@ -41,7 +41,16 @@ button, .file {
   border-radius: 999px;
   padding: 8px 14px;
   font: inherit;
+  cursor: pointer;
 }
+
+.tab {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.tab.on { background: var(--accent); color: white; }
 
 .file { cursor: pointer; }
 
@@ -88,7 +97,44 @@ li { margin: 6px 0; }
 
 footer { width: min(1080px, calc(100% - 32px)); margin: 8px auto 32px; color: var(--muted); }
 
+.flow-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr); gap: 16px; align-items: start; }
+.flow-list { list-style: none; margin: 0; padding: 0 0 0 14px; display: grid; gap: 0; border-left: 2px solid var(--line); }
+.flow-list > li + li::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: 6px 0 6px 2px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+}
+.station.ran b::after { content: " · ran"; color: var(--covered); font-size: 0.78rem; font-weight: 600; }
+.station {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 2px;
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.station small { color: var(--muted); }
+.station.ran { border-color: var(--covered); }
+.station.on { outline: 2px solid var(--accent); }
+.flow-split p { color: var(--muted); margin: 8px 0; }
+.flow-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.flow-detail { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; position: sticky; top: 12px; }
+.flow-detail dl { display: grid; gap: 8px; margin: 0; }
+.flow-detail dt { color: var(--accent); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.flow-detail dd { margin: 0; }
+.flow-quiet, .flow-banner { color: var(--muted); }
+.flow h2 { font-family: Georgia, Palatino, serif; }
+
 @media (max-width: 800px) {
-  .stats, .layout { grid-template-columns: 1fr; }
+  .stats, .layout, .flow-layout, .flow-choices { grid-template-columns: 1fr; }
   h1 { font-size: 1.6rem; }
+  .flow-detail { position: static; }
 }

@@ -75,15 +75,44 @@
 
   root.renderClaimline = renderClaimline;
 
-  function mount(run) {
+  var mode = "flow";
+  var selected = "screen_job";
+  var current = null;
+
+  function paint() {
     var app = document.getElementById("app");
     if (!app) return;
-    app.innerHTML = renderClaimline(run);
+    if (mode === "flow" && root.ClaimlineFlow) app.innerHTML = root.ClaimlineFlow.render(current, selected);
+    else if (current) app.innerHTML = renderClaimline(current);
+    else app.innerHTML = "<p>Open a brief JSON to see a result. The flow above is the path every brief takes.</p>";
+    var briefTab = document.getElementById("tab-brief");
+    var flowTab = document.getElementById("tab-flow");
+    if (briefTab) briefTab.classList.toggle("on", mode === "brief");
+    if (flowTab) flowTab.classList.toggle("on", mode === "flow");
+  }
+
+  function mount(run) {
+    current = run;
+    paint();
   }
 
   if (typeof document !== "undefined" && document && document.getElementById) {
     document.addEventListener("DOMContentLoaded", function () {
-      if (root.CLAIMLINE_SAMPLE) mount(root.CLAIMLINE_SAMPLE);
+      if (root.CLAIMLINE_SAMPLE) current = root.CLAIMLINE_SAMPLE;
+      paint();
+      document.addEventListener("click", function (event) {
+        var tab = event.target.closest("[data-tab]");
+        if (tab) {
+          mode = tab.getAttribute("data-tab");
+          paint();
+          return;
+        }
+        var step = event.target.closest("[data-flow-step]");
+        if (!step) return;
+        selected = step.getAttribute("data-flow-step");
+        mode = "flow";
+        paint();
+      });
       var input = document.getElementById("run-file");
       if (!input) return;
       input.addEventListener("change", function () {
