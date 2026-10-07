@@ -139,7 +139,9 @@ py -m venv .venv
 
 On macOS or Linux, use `.venv/bin/python` and forward slashes.
 
-Open `dashboard/index.html` in a browser. **How it moves** is the flow: each step says what comes in, what happens, and what goes out. Steps that ran in the loaded brief are marked. **This brief** is the coverage list. Use **Open a brief JSON** to load `runs/brief.json` after a local run. The page does not upload the file.
+The live dashboard is [https://sam9875.github.io/claimline/](https://sam9875.github.io/claimline/). **How it moves** is the flow: each step says what comes in, what happens, and what goes out. Steps that ran in the loaded brief are marked. **This brief** is the coverage list.
+
+The same page is `dashboard/index.html` if you open it locally. Use **Open a brief JSON** to load `runs/brief.json` after a local run. The page does not upload the file.
 
 Refresh the committed sample after you change the locker or the sample job:
 
