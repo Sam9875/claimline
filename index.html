@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claimline brief</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Claimline</h1>
+    <p class="lede">A local view of one evidence-locked brief. Nothing on this page is sent to a server.</p>
+    <div class="toolbar">
+      <button type="button" class="tab on" id="tab-flow" data-tab="flow">How it moves</button>
+      <button type="button" class="tab" id="tab-brief" data-tab="brief">This brief</button>
+      <label class="file" for="run-file">Open a brief JSON</label>
+      <input id="run-file" type="file" accept="application/json,.json">
+    </div>
+  </header>
+  <main id="app"></main>
+  <footer>
+    <p>Covered rows come from the evidence locker. A gap is a study item, not a line for a CV.</p>
+  </footer>
+  <script src="sample-run.js"></script>
+  <script src="flow.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
