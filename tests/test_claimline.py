@@ -178,3 +178,19 @@ def test_flow_dashboard_marks_the_loaded_brief():
         check=False,
     )
     assert completed.returncode == 0, completed.stdout + completed.stderr
+
+
+def test_map_dashboard_names_the_pieces():
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not installed")
+    import subprocess
+
+    completed = subprocess.run(
+        [node, str(ROOT / "tests" / "dashboard_map.test.cjs")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert completed.returncode == 0, completed.stdout + completed.stderr

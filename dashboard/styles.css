@@ -133,8 +133,83 @@ footer { width: min(1080px, calc(100% - 32px)); margin: 8px auto 32px; color: va
 .flow-quiet, .flow-banner { color: var(--muted); }
 .flow h2 { font-family: Georgia, Palatino, serif; }
 
+.arch { display: grid; gap: 12px; }
+.arch h2 { margin-top: 8px; }
+.arch-board { display: grid; }
+.arch-lane {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.arch-label {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.arch-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.arch-fan { display: grid; gap: 8px; }
+.arch-to {
+  position: relative;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 2px;
+  background: var(--accent);
+}
+.arch-to::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -4px;
+  border: 5px solid transparent;
+  border-left: 7px solid var(--accent);
+}
+.arch-down {
+  width: 2px;
+  height: 22px;
+  margin-left: 36px;
+  background: var(--accent);
+  position: relative;
+}
+.arch-down::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  bottom: -1px;
+  border: 5px solid transparent;
+  border-top: 7px solid var(--accent);
+}
+button.arch-box {
+  min-width: 148px;
+  text-align: left;
+  display: grid;
+  gap: 2px;
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+button.arch-box small { color: var(--muted); }
+button.arch-box.on { border-color: var(--accent); outline: 2px solid var(--accent); }
+.arch-note {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  max-width: 72ch;
+}
+.arch-note h2 { margin: 0 0 8px; }
+.arch-note p { margin: 0; }
+
 @media (max-width: 800px) {
   .stats, .layout, .flow-layout, .flow-choices { grid-template-columns: 1fr; }
+  .arch-flow { flex-direction: column; align-items: stretch; }
+  .arch-to { width: 2px; height: 18px; flex-basis: 18px; align-self: center; }
+  .arch-to::after { right: auto; left: -4px; top: auto; bottom: -1px; border: 5px solid transparent; border-top: 7px solid var(--accent); }
+  .arch-down { margin-left: 0; justify-self: center; }
   h1 { font-size: 1.6rem; }
   .flow-detail { position: static; }
 }

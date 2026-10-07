@@ -139,7 +139,7 @@ py -m venv .venv
 
 On macOS or Linux, use `.venv/bin/python` and forward slashes.
 
-The live dashboard is [https://sam9875.github.io/claimline/](https://sam9875.github.io/claimline/). **How it moves** is the flow: each step says what comes in, what happens, and what goes out. Steps that ran in the loaded brief are marked. **This brief** is the coverage list. That address is a published copy of `dashboard/`. A later edit on `main` does not change the live page until the copy is published again.
+The live dashboard is [https://sam9875.github.io/claimline/](https://sam9875.github.io/claimline/). **Diagram** is the architecture: the pieces, and the arrows between them. **How it moves** is one brief: each step says what comes in, what happens, and what goes out. Steps that ran are marked. **This brief** is the coverage list. That address is a published copy of `dashboard/`. A later edit on `main` does not change the live page until the copy is published again.
 
 The same page is `dashboard/index.html` if you open it locally. Use **Open a brief JSON** to load `runs/brief.json` after a local run. The page does not upload the file.
 
