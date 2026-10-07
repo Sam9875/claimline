@@ -77,18 +77,22 @@
 
   var mode = "flow";
   var selected = "screen_job";
+  var archId = "screen";
   var current = null;
 
   function paint() {
     var app = document.getElementById("app");
     if (!app) return;
-    if (mode === "flow" && root.ClaimlineFlow) app.innerHTML = root.ClaimlineFlow.render(current, selected);
+    if (mode === "map" && root.ClaimlineMap) app.innerHTML = root.ClaimlineMap.render(archId);
+    else if (mode === "flow" && root.ClaimlineFlow) app.innerHTML = root.ClaimlineFlow.render(current, selected);
     else if (current) app.innerHTML = renderClaimline(current);
     else app.innerHTML = "<p>Open a brief JSON to see a result. The flow above is the path every brief takes.</p>";
     var briefTab = document.getElementById("tab-brief");
     var flowTab = document.getElementById("tab-flow");
+    var mapTab = document.getElementById("tab-map");
     if (briefTab) briefTab.classList.toggle("on", mode === "brief");
     if (flowTab) flowTab.classList.toggle("on", mode === "flow");
+    if (mapTab) mapTab.classList.toggle("on", mode === "map");
   }
 
   function mount(run) {
@@ -104,6 +108,13 @@
         var tab = event.target.closest("[data-tab]");
         if (tab) {
           mode = tab.getAttribute("data-tab");
+          paint();
+          return;
+        }
+        var arch = event.target.closest("[data-arch]");
+        if (arch) {
+          archId = arch.getAttribute("data-arch");
+          mode = "map";
           paint();
           return;
         }
